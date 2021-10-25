@@ -23,10 +23,13 @@ let entertainment = ["Dancing", "Concert",
 
 let myEntertainment = entertainment[
     Math.floor(Math.random() * 4)];
-    
+
 alert(`${myDestination}\n${myRestaurant}\n
 ${myTransportation}\n${myEntertainment}`)
 
-let myTrip = prompt("Is this trip good?")
-
-
+let myTrip = confirm("Is this trip good?");
+console.log(myTrip); // Yes = true, No = False;
+if (myTrip){ // if true
+alert("Let's go Honey!");}
+else {// if false 
+prompt("What would you like to change?")
